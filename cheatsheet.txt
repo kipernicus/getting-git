@@ -1,0 +1,53 @@
+BASICS
+
+git clone https://github.com/kipernicus/getting-git
+git status
+
+REVERT CHANGES IN A FILE
+git checkout -- filename
+
+ADDING/COMMITTING
+git add filename
+git reset HEAD
+git commit
+git commit -m
+git commit -m filename
+
+REVERT COMMITS
+git reset HEAD~1
+git reset --hard origin/branchname
+
+BRANCHING
+git branch branchname
+git checkout branchname
+git branch -a
+git merge branchname
+
+STASHING
+git stash
+git stash list
+git stash pop
+git stash apply
+git stash clear
+
+MERGING
+git merge branchname
+git merge --abort
+
+CHERRY PICKING
+git show commithash
+git cherry-pick commithash
+
+DEALING WITH REMOTES
+git push
+git push --set-upstream origin branchname
+git remote show origin
+git fetch
+git checkout -t origin/branchname
+
+BISECT
+git bisect start
+git bisect bad
+git bisect good commithash
+git bisect reset
+
